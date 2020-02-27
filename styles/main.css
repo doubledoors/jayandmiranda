@@ -132,7 +132,7 @@ form ul {
     margin: 0;
 }
 
-form label, form textarea, form input[type=text] {
+form label, form textarea, form input[type=text], .radio-group {
     margin-bottom: 30px;
 }
 
@@ -158,10 +158,6 @@ form ul li {
     width: 100%;
     text-transform: uppercase;
     font-size: 0.833em;
-}
-
-li.radio-group {
-    flex-direction: row;
 }
 
 form textarea, form input[type=text] {
