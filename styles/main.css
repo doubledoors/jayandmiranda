@@ -2,7 +2,6 @@ html, body {
     width: 100%;
     height: 100%;
 }
-
 html {
     box-sizing: border-box;
 }
@@ -16,6 +15,17 @@ body {
     font-family: 'EB Garamond', serif;
     font-size: 40px;
     letter-spacing: 0.15em;
+}
+
+button {
+    background-color: transparent;
+    border: 4px solid #ffe9ae;
+    color: #ffe9ae;
+    text-transform: uppercase;
+    font-size: 0.833em;
+    cursor: pointer;
+    padding: 14px 0;
+    line-height: 0.8;
 }
 
 .outer {
@@ -33,9 +43,9 @@ body {
     justify-content: space-between;
     align-items: center;
 
-    height: 1080px;
+    height: 100%;
     width: 1920px;
-    padding: 0 85px;
+    padding: 100px 85px;
 }
 
 .content-row {
@@ -81,4 +91,79 @@ body {
 
 .proper-underline:first-child {
     margin-right: 115px;
+}
+
+.contact-row {
+    display: flex;
+    width: 100%;
+    height: 100%;
+}
+
+.contact-info, .contact-form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    width: 50%;
+}
+
+.contact-heading {
+    font-size: 2.813em;
+    text-transform: uppercase;
+}
+
+.contact-info-line {
+    font-size: 0.833em;
+    letter-spacing: 0.1em;
+}
+
+.form-wrapper {
+    width: 615px;
+}
+
+form button {
+    width: 100%;
+}
+
+form ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+form label, form textarea, form input[type=text] {
+    margin-bottom: 30px;
+}
+
+form input[type=text], form textarea, form textarea::placeholder {
+    color: #52504b;
+}
+
+form textarea::placeholder, form textarea, form input[type=text] {
+    font-size: 24px;
+}
+
+form textarea, form input[type=text] {
+    padding: 21px;
+}
+
+form textarea {
+    min-height: 128px;
+}
+
+form ul li {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    text-transform: uppercase;
+    font-size: 0.833em;
+}
+
+li.radio-group {
+    flex-direction: row;
+}
+
+form textarea, form input[type=text] {
+    background-color: #ffe9ae;
 }
