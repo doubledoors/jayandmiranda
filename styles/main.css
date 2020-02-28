@@ -32,7 +32,7 @@ button {
     text-transform: uppercase;
     font-size: 0.833rem;
     cursor: pointer;
-    padding: 14px 0;
+    padding: 0.350rem 0;
     line-height: 0.8;
 }
 
@@ -50,11 +50,11 @@ ul {
     width: 100%;
     height: 100%;
 
-    -webkit-animation: fadein 1s;
-       -moz-animation: fadein 1s;
-        -ms-animation: fadein 1s;
-         -o-animation: fadein 1s;
-            animation: fadein 1s;
+    -webkit-animation: fadein 0.6s;
+       -moz-animation: fadein 0.6s;
+        -ms-animation: fadein 0.6s;
+         -o-animation: fadein 0.6s;
+            animation: fadein 0.6s;
 }
 
 .inner {
@@ -65,7 +65,7 @@ ul {
 
     height: 100%;
     width: 1920px;
-    padding: 100px 85px;
+    padding: 2.500rem 2.125rem;
 }
 
 .content-row {
@@ -91,7 +91,7 @@ ul {
     justify-content: space-between;
     align-items: center;
 
-    width: 370px;  
+    width: 9.250rem;
 }
 
 .centre-title {
@@ -105,7 +105,7 @@ ul {
 }
 
 .centre-title-seperator {
-    width: 245px;
+    width: 6.125rem;
     border-bottom: 3px solid #ffe9ae;
     margin: 1rem 0;
 }
@@ -162,7 +162,7 @@ ul {
 }
 
 .form-wrapper {
-    width: 615px;
+    width: 15.375rem;
 }
 
 form button {
@@ -170,7 +170,7 @@ form button {
 }
 
 form label, form textarea, form input[type=text], .radio-group {
-    margin-bottom: 30px;
+    margin-bottom: 0.750rem;
 }
 
 form input[type=text], form textarea, form textarea::placeholder {
@@ -178,15 +178,15 @@ form input[type=text], form textarea, form textarea::placeholder {
 }
 
 form textarea::placeholder, form textarea, form input[type=text] {
-    font-size: 24px;
+    font-size: 0.600rem;
 }
 
 form textarea, form input[type=text] {
-    padding: 21px;
+    padding: 0.525rem;
 }
 
 form textarea {
-    min-height: 128px;
+    min-height: 3.200rem;
 }
 
 form ul li {
@@ -211,7 +211,7 @@ form textarea, form input[type=text] {
 [type="radio"]:not(:checked) + label
 {
     position: relative;
-    padding-left: 60px;
+    padding-left: 1.500rem;
     cursor: pointer;
     display: inline-block;
     text-transform: none;
@@ -223,21 +223,21 @@ form textarea, form input[type=text] {
     position: absolute;
     left: 0;
     top: 0;
-    width: 40px;
-    height: 40px;
-    border: 7px solid #ffe9ae;
+    width: 1rem;
+    height: 1rem;
+    border: 0.175rem solid #ffe9ae;
     border-radius: 100%;
 }
 
 [type="radio"]:checked + label:after,
 [type="radio"]:not(:checked) + label:after {
     content: '';
-    width: 18px;
-    height: 18px;
+    width: 0.450rem;
+    height: 0.450rem;
     background: #ffe9ae;
     position: absolute;
-    top: 11px;
-    left: 11px;
+    top: 0.275rem;
+    left: 0.275rem;
     border-radius: 100%;
     -webkit-transition: all 0.2s ease;
     transition: all 0.2s ease;
