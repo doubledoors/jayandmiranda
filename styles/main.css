@@ -49,6 +49,12 @@ ul {
 
     width: 100%;
     height: 100%;
+
+    -webkit-animation: fadein 1s;
+       -moz-animation: fadein 1s;
+        -ms-animation: fadein 1s;
+         -o-animation: fadein 1s;
+            animation: fadein 1s;
 }
 
 .inner {
@@ -122,12 +128,12 @@ ul {
 
 .info-block {
     color: #52504b;
-    font-size: 1rrem;
+    font-size: 0.600rem;
 }
 
 .info-block-heading {
     color: #ff744d;
-    font-size: 1rem;
+    font-size: 0.900rem;
 }
 
 .contact-row {
@@ -247,4 +253,24 @@ form textarea, form input[type=text] {
     opacity: 1;
     -webkit-transform: scale(1);
     transform: scale(1);
+}
+
+@keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+
+@-moz-keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+
+@-webkit-keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+
+@-ms-keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
 }
