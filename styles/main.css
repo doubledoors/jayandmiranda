@@ -12,6 +12,36 @@ html {
     box-sizing: border-box;
 }
 
+@media only screen and (max-width: 1600px) {
+    html {
+        font-size: 35px;
+    }
+}
+
+@media only screen and (max-width: 1400px) {
+    html {
+        font-size: 33px;
+    }
+}
+
+@media only screen and (max-width: 1300px) {
+    html {
+        font-size: 31px;
+    }
+}
+
+@media only screen and (max-width: 1220px) {
+    html {
+        font-size: 29px;
+    }
+}
+
+@media only screen and (max-width: 1124px) {
+    html {
+        font-size: 28px;
+    }
+}
+
 body {
     font-family: 'EB Garamond', serif;
     letter-spacing: 0.15rem;
@@ -149,16 +179,15 @@ ul {
     color: #52504b;
     font-size: 0.600rem;
     letter-spacing: 0.04rem;
-    margin: 0 2.250rem;
-    white-space: nowrap;
+    padding: 0 1.250rem;
 }
 
 .info-block:first-child {
-    margin-left: 0;
+    padding-left: 0;
 }
 
-.info-block ul {
-    white-space: nowrap;
+.info-block:last-child {
+    padding-right: 0;
 }
 
 .info-block ul a, .info-block a {
@@ -181,6 +210,23 @@ ul {
     color: #ff744d;
     font-size: 0.900rem;
     text-transform: uppercase;
+    white-space: nowrap;
+}
+
+#order-of-the-day {
+    max-width: 490px;
+}
+#food-and-drink {
+    max-width: 440px;
+}
+#getting-there {
+    max-width: 580px;
+}
+#accommodation {
+    max-width: 470px;
+}
+#gifts {
+    max-width: 830px;
 }
 
 .contact-row {
