@@ -12,36 +12,6 @@ html {
     box-sizing: border-box;
 }
 
-@media only screen and (max-width: 1600px) {
-    html {
-        font-size: 35px;
-    }
-}
-
-@media only screen and (max-width: 1400px) {
-    html {
-        font-size: 33px;
-    }
-}
-
-@media only screen and (max-width: 1300px) {
-    html {
-        font-size: 31px;
-    }
-}
-
-@media only screen and (max-width: 1220px) {
-    html {
-        font-size: 29px;
-    }
-}
-
-@media only screen and (max-width: 1124px) {
-    html {
-        font-size: 28px;
-    }
-}
-
 body {
     font-family: 'EB Garamond', serif;
     letter-spacing: 0.15rem;
@@ -105,7 +75,8 @@ ul {
     align-items: flex-start;
 }
 
-.inner.render-start > .content-row {
+.inner.render-start > .content-row,
+.inner.render-start > .nav-row {
     margin-bottom: 2.000rem;
 }
 
@@ -117,7 +88,7 @@ ul {
     justify-content: flex-start;
 }
 
-.content-row {
+.content-row, .nav-row {
     display: flex;
     justify-content: space-between;
     width: 100%;
@@ -125,6 +96,12 @@ ul {
 
 .content-row.centre {
     justify-content: center;
+}
+
+.info-text-mobile {
+    display: none;
+    margin-bottom: 1rem;
+    font-size: 0.75rem;
 }
 
 .info-text a {
@@ -151,6 +128,7 @@ ul {
     
     text-transform: uppercase;
     font-size: 2.5rem;
+    margin: 3rem 0 1rem 0;
 }
 
 .centre-title-seperator {
@@ -231,7 +209,7 @@ ul {
     max-width: 490px;
 }
 #order-of-the-day::after {
-    top: 170px;
+    top: 4.250rem;
     right: -80px;
     background-image: url("../assets/rings.png");
 }
@@ -240,7 +218,7 @@ ul {
     max-width: 440px;
 }
 #food-and-drink::after {
-    top: 210px;
+    top: 5rem;
     right: -80px;
     background-image: url("../assets/cutlery.png");
 }
@@ -249,7 +227,7 @@ ul {
     max-width: 580px;
 }
 #getting-there::after {
-    top: 210px;
+    top: 5.250rem;
     right: 0px;
     background-image: url("../assets/car.png");
 }
@@ -258,17 +236,16 @@ ul {
     max-width: 470px;
 }
 #accommodation::after {
-    top: 90px;
+    top: 2.250rem;
     right: -40px;
     background-image: url("../assets/bed.png");
 }
 
 #gifts {
     max-width: 830px;
-    padding-top: 2rem; 
 }
 #gifts::after {
-    top: 150px;
+    top: 1.750rem;
     right: -10px;
     background-image: url("../assets/plane.png");
 }
@@ -397,6 +374,130 @@ form textarea, form input[type=text] {
     opacity: 1;
     -webkit-transform: scale(1);
     transform: scale(1);
+}
+
+@media only screen and (max-width: 1600px) {
+    html {
+        font-size: 35px;
+    }
+}
+
+@media only screen and (max-width: 1400px) {
+    html {
+        font-size: 33px;
+    }
+}
+
+@media only screen and (max-width: 1280px) {
+    html {
+        font-size: 30px;
+    }
+}
+
+@media only screen and (max-width: 1220px) {
+    html {
+        font-size: 28px;
+    }
+}
+
+@media only screen and (max-width: 1124px) {
+    html {
+        font-size: 26px;
+    }
+}
+
+@media only screen and (max-width: 1024px) {
+    .contact-info {
+        margin-bottom: 2rem;
+    }
+    .contact-info, .contact-form {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    
+        width: 100%;
+    }
+    .contact-row {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        margin: 0;
+    }
+}
+
+@media only screen and (max-width: 980px) {
+    #alt .content-row {
+        flex-direction: column;
+        margin: 0;
+        padding-right: 2rem;
+    }
+
+    .navigation-wrapper {
+        width: 7rem;
+    }
+
+    .info-block {
+        padding: 0;
+        margin: 0.5rem 0;
+    }
+
+    .info-block::after {
+        display: none;
+    }
+}
+
+@media only screen and (max-width: 550px) {
+    html {
+        font-size: 24px;
+    }
+
+    .inner {
+        width: 100%;
+        padding: 0.75rem;
+    }
+
+    .home .inner {
+        justify-content: flex-start;
+    }
+
+    .home .content-row {
+        width: 100%;
+    }
+
+    .home .content-row:last-child {
+        display: none;
+    }
+
+    .home .info-text {
+        display: flex;
+        justify-content: flex-end;
+        width: 100%;
+    }
+
+    .home .info-text:first-child {
+        display: none;
+    }
+
+    .info-text-mobile {
+        display: block;
+    }
+
+    .centre {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .form-wrapper {
+        width: 100%;
+    }
+}
+
+@media only screen and (max-width: 320px) {
+    html {
+        font-size: 22px;
+    }
 }
 
 @keyframes fadein {
