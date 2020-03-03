@@ -32,33 +32,39 @@
               </div>
               <div class="contact-form">
                 <div class="form-wrapper">
-                  <form action="">
-                    <ul>
-                      <li>
-                        <label for="name">Name</label>
-                        <input type="text" id="name" name="user_name" autofocus required>
-                      </li>
-                      <li>
-                        <label for="msg">Message</label>
-                        <textarea id="msg" name="user_message" placeholder="eg. dietary requirements"></textarea>
-                      </li>
-                      <li>
-                        <label>Attending</label>
-                        <div class="radio-group">
-                          <input type="radio" id="yes" name="attending" value="yes" required>
-                          <label for="yes">Yes</label>
-                          <input type="radio" id="no" name="attending" value="no">
-                          <label for="no">No</label>
-                        </div>
-                      </li>
-                    </ul>
-                    <button>Send</button>
+                  <form class="gform" data-formDataNameOrder method="POST" action="https://script.google.com/macros/s/AKfycbyXTag0XgU7ZJEvlNGCX7t2M98cU8HVPOK75my2/exec">
+                    <div class="form-elements">
+                      <ul>
+                        <li>
+                          <label for="name">Name</label>
+                          <input type="text" id="name" name="name" autofocus required>
+                        </li>
+                        <li>
+                          <label for="message">Message</label>
+                          <textarea id="msg" name="message" placeholder="eg. dietary requirements"></textarea>
+                        </li>
+                        <li>
+                          <label>Attending</label>
+                          <div class="radio-group">
+                            <input type="radio" id="yes" name="attending" value="YES" required>
+                            <label for="yes">Yes</label>
+                            <input type="radio" id="no" name="attending" value="NO">
+                            <label for="no">No</label>
+                          </div>
+                        </li>
+                      </ul>
+                      <input style="display: none;" type="text" id="honeypot" name="honeypot">
+                      <button>Send</button>
+                    </div>
+                    <div class="form-thank-you-message">
+                      Thank you!
+                    </div>
                   </form>
                 </div>
               </div>
             </div>
         </div>
       </div> 
-    <!-- <script src="js/scripts.js"></script> -->
+    <script data-cfasync="false" type="text/javascript" src="js/form-submission-handler.js"></script>
   </body>
 </html>

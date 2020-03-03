@@ -128,7 +128,6 @@ ul {
     
     text-transform: uppercase;
     font-size: 2.5rem;
-    margin: 3rem 0 1rem 0;
 }
 
 .centre-title-seperator {
@@ -154,6 +153,8 @@ ul {
 }
 
 .info-block {
+    display: flex;
+
     position: relative;
     color: #52504b;
     font-size: 0.600rem;
@@ -167,6 +168,10 @@ ul {
 
 .info-block:last-child {
     padding-right: 0;
+}
+
+.info-block ul{
+    white-space: nowrap;
 }
 
 .info-block ul a, .info-block a {
@@ -205,6 +210,15 @@ ul {
     background-size: contain;
 }
 
+.info-block-column img {
+    width: 100%;
+    height: auto;
+}
+
+.info-block-column img {
+    display: none;
+}
+
 #order-of-the-day {
     max-width: 490px;
 }
@@ -218,10 +232,12 @@ ul {
     max-width: 440px;
 }
 #food-and-drink::after {
-    top: 5rem;
-    right: -80px;
+    top: 4rem;
+    right: -60px;
     background-image: url("../assets/cutlery.png");
+    transform: scale(0.8) rotate(45deg);
 }
+
 
 #getting-there {
     max-width: 580px;
@@ -313,6 +329,12 @@ form ul li {
 
 form textarea, form input[type=text] {
     background-color: #ffe9ae;
+}
+
+.form-thank-you-message {
+    display: none;
+
+    justify-content: center;
 }
 
 .radio-group {
@@ -430,7 +452,6 @@ form textarea, form input[type=text] {
     #alt .content-row {
         flex-direction: column;
         margin: 0;
-        padding-right: 2rem;
     }
 
     .navigation-wrapper {
@@ -438,12 +459,49 @@ form textarea, form input[type=text] {
     }
 
     .info-block {
+        display: flex;
+        justify-content: space-between;
+
         padding: 0;
         margin: 0.5rem 0;
+        width: 100%;
     }
 
     .info-block::after {
         display: none;
+    }
+
+    .info-block-column {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+
+        width: 50%;
+        padding: 0.5rem;
+    }
+
+    .info-block-column img {
+        display: block;
+    }
+
+    #order-of-the-day,
+    #food-and-drink,
+    #getting-there,
+    #accommodation,
+    #gifts {
+        max-width: none;
+    }
+}
+
+@media only screen and (max-width: 980px) and (orientation: portrait) {
+    html {
+        font-size: 35px;
+    }
+}
+
+@media only screen and (max-width: 768px) and (orientation: portrait) {
+    html {
+        font-size: 30px;
     }
 }
 
@@ -489,8 +547,25 @@ form textarea, form input[type=text] {
         text-align: center;
     }
 
+    .centre-title {
+        margin: 3rem 0 1rem 0;
+    }
+
     .form-wrapper {
         width: 100%;
+    }
+
+    .info-block {
+        flex-direction: column;
+    }
+
+    .info-block-column {
+        padding: 0;
+        width: 100%;
+    }
+
+    .info-block-column img {
+        display: none;
     }
 }
 
