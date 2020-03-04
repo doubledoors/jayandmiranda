@@ -14,7 +14,7 @@ html {
 
 body {
     font-family: 'EB Garamond', serif;
-    letter-spacing: 0.15rem;
+    letter-spacing: 0.1rem;
 }
 
 body#primary {
@@ -84,9 +84,9 @@ ul {
     margin-bottom: 3.250rem;
 }
 
-.inner.render-start > .content-row:nth-child(3) {
+/* .inner.render-start > .content-row:nth-child(3) {
     justify-content: flex-start;
-}
+} */
 
 .content-row, .nav-row {
     display: flex;
@@ -195,7 +195,7 @@ ul {
     font-size: 0.900rem;
     text-transform: uppercase;
     white-space: nowrap;
-}
+    letter-spacing: 0.1rem;}
 
 .info-block::after {
     content: "";
@@ -208,6 +208,21 @@ ul {
     background-repeat: no-repeat;
     background-position: center;
     background-size: contain;
+}
+
+.info-block-column {
+    display: flex;
+    flex-direction: column;
+}
+
+.info-block-column-two-col {
+    display: flex;
+    margin: 0.400rem 0;
+}
+
+.info-block-column-title {
+    margin-right: 1.350rem;
+    min-width: 2.075rem;
 }
 
 .info-block-column img {
@@ -223,8 +238,8 @@ ul {
     max-width: 490px;
 }
 #order-of-the-day::after {
-    top: 4.250rem;
-    right: -80px;
+    top: 3.85rem;
+    right: -1.250rem;
     background-image: url("../assets/rings.png");
 }
 
@@ -243,8 +258,8 @@ ul {
     max-width: 580px;
 }
 #getting-there::after {
-    top: 5.250rem;
-    right: 0px;
+    top: 6.16rem;
+    right: -0.85rem;
     background-image: url("../assets/car.png");
 }
 
@@ -259,10 +274,11 @@ ul {
 
 #gifts {
     max-width: 830px;
+    padding-left: 0;
 }
 #gifts::after {
-    top: 1.750rem;
-    right: -10px;
+    top: 2.25rem;
+    right: 2.250rem;
     background-image: url("../assets/plane.png");
 }
 
@@ -305,6 +321,7 @@ form label, form textarea, form input[type=text], .radio-group {
 
 form input[type=text], form textarea, form textarea::placeholder {
     color: #52504b;
+    letter-spacing: 0.075rem;
 }
 
 form textarea::placeholder, form textarea, form input[type=text] {
@@ -461,6 +478,7 @@ form textarea, form input[type=text] {
     .info-block {
         display: flex;
         justify-content: space-between;
+        position: relative;
 
         padding: 0;
         margin: 0.5rem 0;
@@ -468,7 +486,8 @@ form textarea, form input[type=text] {
     }
 
     .info-block::after {
-        display: none;
+        position: absolute;
+        left: -99999px;
     }
 
     .info-block-column {
@@ -557,6 +576,40 @@ form textarea, form input[type=text] {
 
     .info-block {
         flex-direction: column;
+    }
+
+    .info-block::after {
+        content: "";
+        position: absolute;
+        width: 100%;
+        height: 6.950rem;
+        top: 0;
+        right: 0;
+        display: inline-block;
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: contain;
+    }
+
+    #order-of-the-day::after {
+        top: -1rem;
+    }
+    
+    #food-and-drink::after {
+        top: 1rem;
+    }
+    
+    
+    #getting-there::after {
+        top: 1rem;
+    }
+    
+    #accommodation::after {
+        top: 1rem;
+    }
+    
+    #gifts::after {
+        top: 1rem;
     }
 
     .info-block-column {
