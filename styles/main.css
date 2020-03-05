@@ -319,8 +319,20 @@ ul {
     letter-spacing: 0.1rem;
 }
 
+.sending-spinner {
+    display: none;
+    width: 3.500rem;
+    height: 3.500rem;
+}
+
 .form-wrapper {
+    display: flex;
+    justify-content: center;
     width: 15.375rem;
+}
+
+form {
+    width: 100%;
 }
 
 form button {

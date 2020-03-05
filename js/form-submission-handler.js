@@ -65,6 +65,12 @@
       var url = form.action;
       var xhr = new XMLHttpRequest();
       xhr.open('POST', url);
+      var spinner = document.querySelector(".sending-spinner");
+      var form = document.querySelector("form");
+      if (spinner && form) {
+        spinner.style.display = "block";
+        form.style.display = "none";
+      }
       // xhr.withCredentials = true;
       xhr.setRequestHeader("Content-Type", "application/x-www-form-urlencoded");
       xhr.onreadystatechange = function() {
