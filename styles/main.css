@@ -84,9 +84,20 @@ ul {
     margin-bottom: 3.250rem;
 }
 
-/* .inner.render-start > .content-row:nth-child(3) {
-    justify-content: flex-start;
-} */
+.home .content-row.centre,
+.home .info-text {
+    animation: fadein 0.75s ease-in-out;
+    animation-fill-mode: both;
+
+}
+
+.home .content-row.centre {
+    animation-delay: 0.5s;
+}
+
+.home .info-text {
+    animation-delay: 2s;
+}
 
 .content-row, .nav-row {
     display: flex;
