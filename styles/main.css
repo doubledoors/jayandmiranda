@@ -352,6 +352,11 @@ form textarea, form input[type=text] {
     display: none;
 
     justify-content: center;
+    align-items: center;
+    height: 100%;
+    font-size: 2.800rem;
+    text-transform: uppercase;
+    text-align: center;
 }
 
 .radio-group {
@@ -572,6 +577,11 @@ form textarea, form input[type=text] {
 
     .form-wrapper {
         width: 100%;
+    }
+
+    .form-thank-you-message {
+        align-items: flex-start;
+        padding-top: 6rem;
     }
 
     .info-block {
