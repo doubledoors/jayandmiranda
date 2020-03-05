@@ -643,6 +643,10 @@ form textarea, form input[type=text] {
     .info-block-column img {
         display: none;
     }
+
+    .info-block.anchor {
+        height: 1rem;
+    }
 }
 
 @media only screen and (max-width: 320px) {
