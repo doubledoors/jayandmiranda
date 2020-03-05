@@ -85,17 +85,18 @@ ul {
 }
 
 .home .content-row.centre,
-.home .info-text {
+.home .info-text,
+.info-text-mobile {
     animation: fadein 0.75s ease-in-out;
     animation-fill-mode: both;
-
 }
 
 .home .content-row.centre {
     animation-delay: 0.5s;
 }
 
-.home .info-text {
+.home .info-text,
+.info-text-mobile {
     animation-delay: 2s;
 }
 
