@@ -580,11 +580,13 @@ form textarea, form input[type=text] {
 
     .info-block::after {
         content: "";
-        position: absolute;
+        position: relative;
         width: 100%;
-        height: 6.950rem;
-        top: 0;
+        height: 6rem;
+        top: -1rem;
         right: 0;
+        left: 0;
+        bottom: 0;
         display: inline-block;
         background-repeat: no-repeat;
         background-position: center;
@@ -596,20 +598,20 @@ form textarea, form input[type=text] {
     }
     
     #food-and-drink::after {
-        top: 1rem;
+        top: -0.8rem;
     }
     
     
     #getting-there::after {
-        top: 1rem;
+        top: -0.2rem;
     }
     
     #accommodation::after {
-        top: 1rem;
+        top: -0.2rem;
     }
     
     #gifts::after {
-        top: 1rem;
+        top: 0rem;
     }
 
     .info-block-column {
