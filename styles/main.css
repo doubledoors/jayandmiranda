@@ -621,7 +621,7 @@ form textarea, form input[type=text] {
         right: 0;
         left: 0;
         bottom: 0;
-        display: inline-block;
+        display: block;
         background-repeat: no-repeat;
         background-position: center;
         background-size: contain;
