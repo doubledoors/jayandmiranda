@@ -166,6 +166,7 @@ ul {
 
 .info-block {
     display: flex;
+    flex: 1;
 
     position: relative;
     color: #52504b;
@@ -183,6 +184,9 @@ ul {
 }
 
 .info-block ul{
+    display: flex;
+    flex: 0;
+    flex-direction: column;
     white-space: nowrap;
 }
 
@@ -200,6 +204,8 @@ ul {
 
 .info-block-list-wrap {
     display: flex;
+    flex: 1;
+    justify-content: flex-start;
 }
 
 .info-block-heading {
@@ -223,6 +229,7 @@ ul {
 
 .info-block-column {
     display: flex;
+    flex: 1;
     flex-direction: column;
 }
 
@@ -517,7 +524,6 @@ form textarea, form input[type=text] {
     }
 
     .info-block-column {
-        display: flex;
         flex-direction: column;
         justify-content: center;
 
