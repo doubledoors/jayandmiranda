@@ -622,6 +622,9 @@ form textarea, form input[type=text] {
     .info-block-column {
         padding: 0;
         width: 100%;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: flex-start;
     }
 
     .info-block.anchor {
