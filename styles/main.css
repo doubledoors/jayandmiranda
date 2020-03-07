@@ -598,6 +598,7 @@ form textarea, form input[type=text] {
         flex-direction: row;
         flex-wrap: wrap;
         justify-content: flex-start;
+        align-items: flex-start;
     }
 
     .info-block.anchor {
