@@ -539,6 +539,14 @@ form textarea, form input[type=text] {
     #gifts {
         max-width: none;
     }
+
+    #food-and-drink .info-block-column:last-child {
+        display: none;
+    }
+
+    #accommodation .info-block-column:last-child {
+        display: none;
+    }
 }
 
 @media only screen and (max-width: 980px) and (orientation: portrait) {
@@ -612,52 +620,29 @@ form textarea, form input[type=text] {
         flex-direction: column;
     }
 
-    .info-block::after {
-        content: "";
-        position: relative;
-        width: 100%;
-        height: 110px;
-        right: 0;
-        left: 0;
-        bottom: 0;
-        display: block;
-        background-repeat: no-repeat;
-        background-position: center;
-        background-size: contain;
-    }
-
-    #order-of-the-day::after {
-        top: -1rem;
-    }
-    
-    #food-and-drink::after {
-        top: -0.8rem;
-    }
-    
-    
-    #getting-there::after {
-        top: -0.2rem;
-    }
-    
-    #accommodation::after {
-        top: -0.2rem;
-    }
-    
-    #gifts::after {
-        top: 0rem;
-    }
-
     .info-block-column {
         padding: 0;
         width: 100%;
     }
 
-    .info-block-column img {
+    .info-block.anchor {
         display: none;
     }
 
-    .info-block.anchor {
-        height: 1rem;
+    .info-block-column img {
+        max-width: 60%;
+        margin: 0 auto;
+    }
+    
+    /* Hacky hack hack let's get this done */
+    #food-and-drink .info-block-column:first-child,
+    #accommodation .info-block-column:first-child {
+        display: none !important;
+    }
+
+    #food-and-drink .info-block-column:last-child,
+    #accommodation .info-block-column:last-child {
+        display: flex !important;
     }
 }
 
