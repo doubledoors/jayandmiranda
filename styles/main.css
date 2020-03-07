@@ -507,7 +507,6 @@ form textarea, form input[type=text] {
     .info-block {
         display: flex;
         justify-content: space-between;
-        position: relative;
 
         padding: 0;
         margin: 0.5rem 0;
@@ -515,8 +514,7 @@ form textarea, form input[type=text] {
     }
 
     .info-block::after {
-        position: absolute;
-        left: -99999px;
+        display: none;
     }
 
     .info-block-column {
