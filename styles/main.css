@@ -215,7 +215,7 @@ ul {
     white-space: nowrap;
     letter-spacing: 0.1rem;}
 
-.info-block::after {
+/* .info-block::after {
     content: "";
     position: absolute;
     width: 7.375rem;
@@ -225,7 +225,7 @@ ul {
     background-repeat: no-repeat;
     background-position: center;
     background-size: contain;
-}
+} */
 
 .info-block-column {
     display: flex;
@@ -252,7 +252,7 @@ ul {
     display: none;
 }
 
-#order-of-the-day {
+/* #order-of-the-day {
     max-width: 490px;
 }
 #order-of-the-day::after {
@@ -270,7 +270,6 @@ ul {
     background-image: url("../assets/cutlery.png");
     transform: scale(0.8) rotate(45deg);
 }
-
 
 #getting-there {
     max-width: 580px;
@@ -298,7 +297,7 @@ ul {
     top: 2.25rem;
     right: 2.250rem;
     background-image: url("../assets/plane.png");
-}
+} */
 
 .contact-row {
     display: flex;
@@ -637,20 +636,6 @@ form textarea, form input[type=text] {
     .info-block-column img {
         max-width: 60%;
         margin: 0 auto;
-    }
-
-    #order-of-the-day::after,
-    #food-and-drink::after,
-    #getting-there::after,
-    #accommodation::after,
-    #gifts::after {
-        position: static !important;
-        display: none !important;
-        top: 0 !important;
-        left: 0 !important;
-        right: 0 !important;
-        width: 0 !important;
-        height: 0 !important;
     }
     
     /* Hacky hack hack let's get this done */
