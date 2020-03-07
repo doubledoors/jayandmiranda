@@ -264,7 +264,6 @@ ul {
     transform: scale(0.8) rotate(45deg);
 }
 
-
 #getting-there {
     max-width: 580px;
 }
@@ -495,7 +494,8 @@ form textarea, form input[type=text] {
 
 @media only screen and (max-width: 980px) {
     #alt .content-row {
-        flex-direction: column;
+        flex-direction: row;
+        flex-wrap: wrap;
         margin: 0;
     }
 
@@ -634,20 +634,6 @@ form textarea, form input[type=text] {
     .info-block-column img {
         max-width: 60%;
         margin: 0 auto;
-    }
-
-    #order-of-the-day::after,
-    #food-and-drink::after,
-    #getting-there::after,
-    #accommodation::after,
-    #gifts::after {
-        position: static !important;
-        display: none !important;
-        top: 0 !important;
-        left: 0 !important;
-        right: 0 !important;
-        width: 0 !important;
-        height: 0 !important;
     }
     
     /* Hacky hack hack let's get this done */
