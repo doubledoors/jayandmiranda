@@ -614,7 +614,8 @@ form textarea, form input[type=text] {
     }
 
     .info-block {
-        flex-direction: column;
+        flex-direction: row;
+        flex-wrap: wrap;
         align-items: flex-start;
     }
 
