@@ -609,6 +609,11 @@ form textarea, form input[type=text] {
         width: 50%;
         margin: 0 auto;
     }
+
+    #order-of-the-day img {
+        position: relative;
+        top: -1.3rem;
+    }
     
     /* Hacky hack hack let's get this done */
     #food-and-drink .info-block-column:first-child,
