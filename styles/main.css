@@ -18,19 +18,19 @@ body {
 }
 
 body#primary {
-    background-color: #ff744d;
-    color: #ffe9ae;
+    background-color: #068249;
+    color: #f9f0dc;
 }
 
 body#alt {
-    background-color: #f8ead9;
-    color: #ff744d;
+    background-color: #f9f0dc;
+    color: #068249;
 }
 
 button {
     background-color: transparent;
-    border: 4px solid #ffe9ae;
-    color: #ffe9ae;
+    border: 4px solid #f9f0dc;
+    color: #f9f0dc;
     text-transform: uppercase;
     font-size: 0.833rem;
     cursor: pointer;
@@ -68,6 +68,10 @@ ul {
     height: 100%;
     width: 1920px;
     padding: 1.500rem 1.125rem;
+}
+
+.nav-row a > img {
+    max-width: 80px;
 }
 
 .inner.render-start {
@@ -144,7 +148,7 @@ ul {
 
 .centre-title-seperator {
     width: 6.125rem;
-    border-bottom: 3px solid #ffe9ae;
+    border-bottom: 3px solid #f9f0dc;
     margin: 1rem 0;
 }
 
@@ -157,11 +161,11 @@ ul {
 }
 
 #primary .proper-underline {
-    border-bottom-color: #ffe9ae;
+    border-bottom-color: #f9f0dc;
 }
 
 #alt .proper-underline {
-    border-bottom-color: #ff744d;
+    border-bottom-color: #068249;
 }
 
 .info-block {
@@ -203,7 +207,7 @@ ul {
 }
 
 .info-block-heading {
-    color: #ff744d;
+    color: #068249;
     font-size: 0.900rem;
     text-transform: uppercase;
     white-space: nowrap;
@@ -367,7 +371,7 @@ form ul li {
 }
 
 form textarea, form input[type=text] {
-    background-color: #ffe9ae;
+    background-color: #f9f0dc;
 }
 
 .form-thank-you-message {
@@ -412,7 +416,7 @@ form textarea, form input[type=text] {
     top: 0;
     width: 1rem;
     height: 1rem;
-    border: 0.175rem solid #ffe9ae;
+    border: 0.175rem solid #f9f0dc;
     border-radius: 100%;
 }
 
@@ -421,7 +425,7 @@ form textarea, form input[type=text] {
     content: '';
     width: 0.450rem;
     height: 0.450rem;
-    background: #ffe9ae;
+    background: #f9f0dc;
     position: absolute;
     top: 0.275rem;
     left: 0.275rem;
@@ -567,6 +571,7 @@ form textarea, form input[type=text] {
         flex-direction: row;
         flex-wrap: wrap;
         align-content: space-between;
+        justify-content: center;
         width: 100%;
         padding: 0.75rem;
     }
